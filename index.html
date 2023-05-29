@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="imgLogo" src="./assetes/logo.png" alt="logo">
+            <h1 class="titleEncriptador">Proyecto Encriptador</h1>
+        </div>
+        <div class="left">
+            <textarea id="myTextEncrypted" onkeypress="onlyTxt()" placeholder="Ingrese texto"></textarea>
+        </div>
+        <div class="right">
+            <img id="imgM" src="./assetes/busqueda.png" alt="bus">
+            <h1 id="titleIMG">Ningún mensaje fue encontrado</h1>
+            <textarea class="txtAreaText" id="txtAreaText" rows="8" cols="80" placeholder="Ingresa el texto que desees encriptar o desenciptar." disabled></textarea>
+            <button id="btnCopy" onclick="copyText()">Copiar</button>
+        </div>
+        <div class="left-button">
+            <p class="info">Solo letras minuscurlas y sin acentos</p>
+            <button id="btnEncrypted">Encriptar</button>
+            <button id="btnDecrypt">Desencriptar</button>
+        </div>
+    </div>
+    <footer>
+        <h3 class="credits">Desarrollado por Armando Ruiz Gutierrez</h3>
+        <a href="https://github.com/RuizArmando"><img class="imgNet" src="./assetes/github.png"></a>
+    </footer>
+</body>
+</html>
